@@ -53,7 +53,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
         if let MenuButton = statusItem?.button {
-            MenuButton.image = NSImage(systemSymbolName: "play", accessibilityDescription: nil)
+            MenuButton.image = NSImage(systemSymbolName: "laptopcomputer", accessibilityDescription: nil)
             MenuButton.action = #selector(MenuButtonToggle)
         }
         

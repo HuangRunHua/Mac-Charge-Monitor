@@ -10,11 +10,14 @@ import AVKit
 
 struct MenuView: View {
     
+    @State var showBattery: Bool = false
+    
     var body: some View {
         ZStack {
             MacAnimationView()
                 .scaleEffect(0.9)
                 .frame(width: 300)
+                .offset(y: -10)
 
             VStack {
                 Text("MacBook Air")
@@ -22,8 +25,20 @@ struct MenuView: View {
                     .foregroundColor(.white)
                 .font(.system(size: 30, weight: .light, design: .rounded))
                 Spacer()
+                
+               BatteryView()
+                    .scaleEffect(0.2)
+                    .padding(.bottom, -60)
+                    .opacity(showBattery ? 1: 0)
             }
         }.background(.black)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    withAnimation {
+                        showBattery = true
+                    }
+                }
+            }
     }
 }
 

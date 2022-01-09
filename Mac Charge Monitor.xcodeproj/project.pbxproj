@@ -16,6 +16,8 @@
 		BDF89B92278AA91900B976EA /* MacAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B90278AA91900B976EA /* MacAnimationView.swift */; };
 		BDF89B95278AA97500B976EA /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */; };
 		BDF89B97278AABE300B976EA /* macbookair.mov in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B96278AABE300B976EA /* macbookair.mov */; };
+		BDF89B9A278AAEB900B976EA /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B99278AAEB900B976EA /* BatteryView.swift */; };
+		BDF89B9C278AB22500B976EA /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B9B278AB22500B976EA /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BDF89B90278AA91900B976EA /* MacAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacAnimationView.swift; sourceTree = "<group>"; };
 		BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
 		BDF89B96278AABE300B976EA /* macbookair.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = macbookair.mov; sourceTree = "<group>"; };
+		BDF89B99278AAEB900B976EA /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		BDF89B9B278AB22500B976EA /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			children = (
 				BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */,
 				BDF89B7E278A92E300B976EA /* ContentView.swift */,
+				BDF89B98278AAE4400B976EA /* View */,
 				BDF89B93278AA95800B976EA /* Extensions */,
 				BDF89B8E278AA8DC00B976EA /* Menu */,
 				BDF89B8B278AA8BE00B976EA /* Resources */,
@@ -104,8 +109,17 @@
 			isa = PBXGroup;
 			children = (
 				BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */,
+				BDF89B9B278AB22500B976EA /* ColorExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDF89B98278AAE4400B976EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDF89B99278AAEB900B976EA /* BatteryView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,10 +194,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF89B9A278AAEB900B976EA /* BatteryView.swift in Sources */,
 				BDF89B92278AA91900B976EA /* MacAnimationView.swift in Sources */,
 				BDF89B95278AA97500B976EA /* AVPlayerExtension.swift in Sources */,
 				BDF89B7F278A92E300B976EA /* ContentView.swift in Sources */,
 				BDF89B91278AA91900B976EA /* MenuView.swift in Sources */,
+				BDF89B9C278AB22500B976EA /* ColorExtension.swift in Sources */,
 				BDF89B7D278A92E300B976EA /* Mac_Charge_MonitorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
