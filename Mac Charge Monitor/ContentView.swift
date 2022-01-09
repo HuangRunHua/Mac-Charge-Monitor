@@ -43,6 +43,12 @@ struct ContentView: View {
         if (remaining == "(no") {
             remaining = "Calculating"
         }
+        
+        // Get device name
+        if let deviceName = Host.current().localizedName {
+           print(deviceName)
+        }
+        
         print("1. ---------------------------")
         print(source)
         print("2. ---------------------------")

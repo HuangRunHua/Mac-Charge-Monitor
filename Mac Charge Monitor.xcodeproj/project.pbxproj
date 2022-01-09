@@ -11,6 +11,11 @@
 		BDF89B7F278A92E300B976EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B7E278A92E300B976EA /* ContentView.swift */; };
 		BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B80278A92E400B976EA /* Assets.xcassets */; };
 		BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B83278A92E400B976EA /* Preview Assets.xcassets */; };
+		BDF89B8D278AA8CF00B976EA /* macbookair.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B8C278AA8CF00B976EA /* macbookair.mp4 */; };
+		BDF89B91278AA91900B976EA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B8F278AA91900B976EA /* MenuView.swift */; };
+		BDF89B92278AA91900B976EA /* MacAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B90278AA91900B976EA /* MacAnimationView.swift */; };
+		BDF89B95278AA97500B976EA /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */; };
+		BDF89B97278AABE300B976EA /* macbookair.mov in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B96278AABE300B976EA /* macbookair.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		BDF89B80278A92E400B976EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDF89B83278A92E400B976EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDF89B85278A92E400B976EA /* Mac_Charge_Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mac_Charge_Monitor.entitlements; sourceTree = "<group>"; };
+		BDF89B8C278AA8CF00B976EA /* macbookair.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = macbookair.mp4; sourceTree = "<group>"; };
+		BDF89B8F278AA91900B976EA /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BDF89B90278AA91900B976EA /* MacAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacAnimationView.swift; sourceTree = "<group>"; };
+		BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
+		BDF89B96278AABE300B976EA /* macbookair.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = macbookair.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 			children = (
 				BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */,
 				BDF89B7E278A92E300B976EA /* ContentView.swift */,
+				BDF89B93278AA95800B976EA /* Extensions */,
+				BDF89B8E278AA8DC00B976EA /* Menu */,
+				BDF89B8B278AA8BE00B976EA /* Resources */,
 				BDF89B80278A92E400B976EA /* Assets.xcassets */,
 				BDF89B85278A92E400B976EA /* Mac_Charge_Monitor.entitlements */,
 				BDF89B82278A92E400B976EA /* Preview Content */,
@@ -67,6 +80,32 @@
 				BDF89B83278A92E400B976EA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDF89B8B278AA8BE00B976EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDF89B96278AABE300B976EA /* macbookair.mov */,
+				BDF89B8C278AA8CF00B976EA /* macbookair.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BDF89B8E278AA8DC00B976EA /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				BDF89B90278AA91900B976EA /* MacAnimationView.swift */,
+				BDF89B8F278AA91900B976EA /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		BDF89B93278AA95800B976EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +168,8 @@
 			files = (
 				BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */,
 				BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */,
+				BDF89B97278AABE300B976EA /* macbookair.mov in Resources */,
+				BDF89B8D278AA8CF00B976EA /* macbookair.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF89B92278AA91900B976EA /* MacAnimationView.swift in Sources */,
+				BDF89B95278AA97500B976EA /* AVPlayerExtension.swift in Sources */,
 				BDF89B7F278A92E300B976EA /* ContentView.swift in Sources */,
+				BDF89B91278AA91900B976EA /* MenuView.swift in Sources */,
 				BDF89B7D278A92E300B976EA /* Mac_Charge_MonitorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
