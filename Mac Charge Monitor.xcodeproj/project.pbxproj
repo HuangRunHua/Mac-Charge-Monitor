@@ -19,6 +19,8 @@
 		BDF89BA1278AC04500B976EA /* DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA0278AC04500B976EA /* DeviceStatus.swift */; };
 		BDF89BA3278AC08300B976EA /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA2278AC08300B976EA /* DeviceInfo.swift */; };
 		BDF89BA8278AC8A100B976EA /* GetDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA7278AC8A100B976EA /* GetDeviceInfo.swift */; };
+		BDF89BAF278B17DE00B976EA /* macbookpro13.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDF89BAE278B17DE00B976EA /* macbookpro13.mp4 */; };
+		BDF89BB1278B199A00B976EA /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF89BB0278B199A00B976EA /* cover.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		BDF89BA2278AC08300B976EA /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		BDF89BA7278AC8A100B976EA /* GetDeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceInfo.swift; sourceTree = "<group>"; };
 		BDF89BA9278ACF2E00B976EA /* Mac-Charge-Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mac-Charge-Monitor-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BDF89BAE278B17DE00B976EA /* macbookpro13.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = macbookpro13.mp4; sourceTree = "<group>"; };
+		BDF89BB0278B199A00B976EA /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		BDF89B8B278AA8BE00B976EA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BDF89BB0278B199A00B976EA /* cover.png */,
+				BDF89BAE278B17DE00B976EA /* macbookpro13.mp4 */,
 				BDF89B96278AABE300B976EA /* macbookair.mov */,
 			);
 			path = Resources;
@@ -201,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF89BAF278B17DE00B976EA /* macbookpro13.mp4 in Resources */,
+				BDF89BB1278B199A00B976EA /* cover.png in Resources */,
 				BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */,
 				BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */,
 				BDF89B97278AABE300B976EA /* macbookair.mov in Resources */,
