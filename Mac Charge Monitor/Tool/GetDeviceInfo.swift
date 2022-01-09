@@ -1,22 +1,18 @@
 //
-//  ContentView.swift
+//  GetDeviceInfo.swift
 //  Mac Charge Monitor
 //
 //  Created by Runhua Huang on 2022/1/9.
 //
 
-import SwiftUI
+import Foundation
 
-struct ContentView: View {
-    var body: some View {
-        Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-            _ = getBatteryState()
-        }
-    }
-    
-    func getBatteryState() -> [String?] {
+struct GetDeviceInfo {
+    func getBatteryState() -> (deviceName: String, source: String, isCharging: Bool, percentage: String, remaining: String) {
         let task = Process()
         let pipe = Pipe()
+        var nameOfDevice: String = ""
+        var isCharging: Bool = false
 
         task.launchPath = "/usr/bin/pmset"
         task.arguments = ["-g", "batt"]
@@ -33,10 +29,17 @@ struct ContentView: View {
         let source = output.components(separatedBy: "'")[1]
         
         // The charging or discharging status
+        // Discharging
         let state = batteryArray[1].description.trimmingCharacters(in: NSCharacterSet.whitespaces).description.capitalized
+        if state != "Discharging" {
+            isCharging = true
+        }
+        
         
         // Get the mac battery percentage
         let percent = String.init(batteryArray[0].description.components(separatedBy: ")")[1].description.trimmingCharacters(in: NSCharacterSet.whitespaces))
+        
+        let percentage = String(percent.dropLast())
         
         // Get the remaining time
         var remaining = String.init(batteryArray[2].dropFirst().split(separator: " ")[0])
@@ -46,25 +49,18 @@ struct ContentView: View {
         
         // Get device name
         if let deviceName = Host.current().localizedName {
-           print(deviceName)
+           //print(deviceName)
+            nameOfDevice = deviceName
         }
-        
-        print("1. ---------------------------")
-        print(source)
-        print("2. ---------------------------")
-        print(state)
-        print("3. ---------------------------")
-        print(percent)
-        print("4. ---------------------------")
-        print(remaining)
-        return [source, state, percent, remaining]
+//        print("1 --> source")
+//        print(source)
+//        print("2 --> state")
+//        print(state)
+//        print("3 --> percent")
+//        print(percentage)
+//        print("4 --> remaining")
+//        print(remaining)
+        return (nameOfDevice, source, isCharging, percentage, remaining)
     }
 
-            
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }

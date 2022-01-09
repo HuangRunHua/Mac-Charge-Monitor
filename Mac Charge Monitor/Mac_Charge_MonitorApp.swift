@@ -11,27 +11,29 @@ import Combine
 @main
 struct Mac_Charge_MonitorApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    @StateObject private var deviceStatus = DeviceStatus()
+    
     var body: some Scene {
-        // Use following code to hide main window
-        // and only show menu bar view
         Settings {
-            MenuView()
+            MenuView().environmentObject(deviceStatus)
         }
-//        WindowGroup {
-//            ContentView()
-//        }
     }
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
+    
+    // Access AppDelegate in other files
+    static private(set) var instance: AppDelegate! = nil
     
     var statusItem: NSStatusItem?
     
     var popOver = NSPopover()
     
     func applicationDidFinishLaunching(_ notification: Notification) {
+        AppDelegate.instance = self
         // Menu View
-        let menuView = MenuView()
+        let menuView = MenuView().environmentObject(DeviceStatus())
         
         // Create PopOver
         popOver.behavior = .transient
@@ -56,8 +58,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             MenuButton.image = NSImage(systemSymbolName: "laptopcomputer", accessibilityDescription: nil)
             MenuButton.action = #selector(MenuButtonToggle)
         }
-        
     }
+    
+    
     
     @objc func MenuButtonToggle(sender: AnyObject) {
         if popOver.isShown {
@@ -65,7 +68,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         else {
             // Show PopOver
-            if let menuButton = statusItem?.button {
+            if  let menuButton = statusItem?.button {
                 // Top Get Button Location for PopOver
                 self.popOver.show(relativeTo: menuButton.bounds, of: menuButton, preferredEdge: .minY)
             }

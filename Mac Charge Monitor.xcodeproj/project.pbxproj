@@ -8,32 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		BDF89B7D278A92E300B976EA /* Mac_Charge_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */; };
-		BDF89B7F278A92E300B976EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B7E278A92E300B976EA /* ContentView.swift */; };
 		BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B80278A92E400B976EA /* Assets.xcassets */; };
 		BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B83278A92E400B976EA /* Preview Assets.xcassets */; };
-		BDF89B8D278AA8CF00B976EA /* macbookair.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B8C278AA8CF00B976EA /* macbookair.mp4 */; };
 		BDF89B91278AA91900B976EA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B8F278AA91900B976EA /* MenuView.swift */; };
 		BDF89B92278AA91900B976EA /* MacAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B90278AA91900B976EA /* MacAnimationView.swift */; };
 		BDF89B95278AA97500B976EA /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */; };
 		BDF89B97278AABE300B976EA /* macbookair.mov in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B96278AABE300B976EA /* macbookair.mov */; };
 		BDF89B9A278AAEB900B976EA /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B99278AAEB900B976EA /* BatteryView.swift */; };
 		BDF89B9C278AB22500B976EA /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B9B278AB22500B976EA /* ColorExtension.swift */; };
+		BDF89BA1278AC04500B976EA /* DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA0278AC04500B976EA /* DeviceStatus.swift */; };
+		BDF89BA3278AC08300B976EA /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA2278AC08300B976EA /* DeviceInfo.swift */; };
+		BDF89BA8278AC8A100B976EA /* GetDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA7278AC8A100B976EA /* GetDeviceInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDF89B79278A92E300B976EA /* Mac Charge Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mac Charge Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mac_Charge_MonitorApp.swift; sourceTree = "<group>"; };
-		BDF89B7E278A92E300B976EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDF89B80278A92E400B976EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDF89B83278A92E400B976EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDF89B85278A92E400B976EA /* Mac_Charge_Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mac_Charge_Monitor.entitlements; sourceTree = "<group>"; };
-		BDF89B8C278AA8CF00B976EA /* macbookair.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = macbookair.mp4; sourceTree = "<group>"; };
 		BDF89B8F278AA91900B976EA /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BDF89B90278AA91900B976EA /* MacAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacAnimationView.swift; sourceTree = "<group>"; };
 		BDF89B94278AA97500B976EA /* AVPlayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
 		BDF89B96278AABE300B976EA /* macbookair.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = macbookair.mov; sourceTree = "<group>"; };
 		BDF89B99278AAEB900B976EA /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		BDF89B9B278AB22500B976EA /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		BDF89BA0278AC04500B976EA /* DeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatus.swift; sourceTree = "<group>"; };
+		BDF89BA2278AC08300B976EA /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		BDF89BA7278AC8A100B976EA /* GetDeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceInfo.swift; sourceTree = "<group>"; };
+		BDF89BA9278ACF2E00B976EA /* Mac-Charge-Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mac-Charge-Monitor-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +69,10 @@
 		BDF89B7B278A92E300B976EA /* Mac Charge Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				BDF89BA9278ACF2E00B976EA /* Mac-Charge-Monitor-Info.plist */,
 				BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */,
-				BDF89B7E278A92E300B976EA /* ContentView.swift */,
+				BDF89BA6278AC88F00B976EA /* Tool */,
+				BDF89B9F278AC03200B976EA /* Data */,
 				BDF89B98278AAE4400B976EA /* View */,
 				BDF89B93278AA95800B976EA /* Extensions */,
 				BDF89B8E278AA8DC00B976EA /* Menu */,
@@ -91,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				BDF89B96278AABE300B976EA /* macbookair.mov */,
-				BDF89B8C278AA8CF00B976EA /* macbookair.mp4 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -120,6 +124,23 @@
 				BDF89B99278AAEB900B976EA /* BatteryView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BDF89B9F278AC03200B976EA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BDF89BA0278AC04500B976EA /* DeviceStatus.swift */,
+				BDF89BA2278AC08300B976EA /* DeviceInfo.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BDF89BA6278AC88F00B976EA /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BDF89BA7278AC8A100B976EA /* GetDeviceInfo.swift */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +204,6 @@
 				BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */,
 				BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */,
 				BDF89B97278AABE300B976EA /* macbookair.mov in Resources */,
-				BDF89B8D278AA8CF00B976EA /* macbookair.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,9 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDF89B9A278AAEB900B976EA /* BatteryView.swift in Sources */,
+				BDF89BA1278AC04500B976EA /* DeviceStatus.swift in Sources */,
 				BDF89B92278AA91900B976EA /* MacAnimationView.swift in Sources */,
+				BDF89BA3278AC08300B976EA /* DeviceInfo.swift in Sources */,
 				BDF89B95278AA97500B976EA /* AVPlayerExtension.swift in Sources */,
-				BDF89B7F278A92E300B976EA /* ContentView.swift in Sources */,
+				BDF89BA8278AC8A100B976EA /* GetDeviceInfo.swift in Sources */,
 				BDF89B91278AA91900B976EA /* MenuView.swift in Sources */,
 				BDF89B9C278AB22500B976EA /* ColorExtension.swift in Sources */,
 				BDF89B7D278A92E300B976EA /* Mac_Charge_MonitorApp.swift in Sources */,
@@ -334,6 +356,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mac Charge Monitor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mac-Charge-Monitor-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,6 +382,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Mac Charge Monitor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mac-Charge-Monitor-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
