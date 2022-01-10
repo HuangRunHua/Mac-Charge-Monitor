@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD315894278C3AF700F385D6 /* RemainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD315893278C3AF700F385D6 /* RemainingView.swift */; };
 		BDF89B7D278A92E300B976EA /* Mac_Charge_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */; };
 		BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B80278A92E400B976EA /* Assets.xcassets */; };
 		BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B83278A92E400B976EA /* Preview Assets.xcassets */; };
@@ -19,11 +20,11 @@
 		BDF89BA1278AC04500B976EA /* DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA0278AC04500B976EA /* DeviceStatus.swift */; };
 		BDF89BA3278AC08300B976EA /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA2278AC08300B976EA /* DeviceInfo.swift */; };
 		BDF89BA8278AC8A100B976EA /* GetDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89BA7278AC8A100B976EA /* GetDeviceInfo.swift */; };
-		BDF89BAF278B17DE00B976EA /* macbookpro13.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDF89BAE278B17DE00B976EA /* macbookpro13.mp4 */; };
 		BDF89BB1278B199A00B976EA /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF89BB0278B199A00B976EA /* cover.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD315893278C3AF700F385D6 /* RemainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingView.swift; sourceTree = "<group>"; };
 		BDF89B79278A92E300B976EA /* Mac Charge Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mac Charge Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mac_Charge_MonitorApp.swift; sourceTree = "<group>"; };
 		BDF89B80278A92E400B976EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		BDF89BA2278AC08300B976EA /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		BDF89BA7278AC8A100B976EA /* GetDeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDeviceInfo.swift; sourceTree = "<group>"; };
 		BDF89BA9278ACF2E00B976EA /* Mac-Charge-Monitor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mac-Charge-Monitor-Info.plist"; sourceTree = SOURCE_ROOT; };
-		BDF89BAE278B17DE00B976EA /* macbookpro13.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = macbookpro13.mp4; sourceTree = "<group>"; };
 		BDF89BB0278B199A00B976EA /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				BDF89BB0278B199A00B976EA /* cover.png */,
-				BDF89BAE278B17DE00B976EA /* macbookpro13.mp4 */,
 				BDF89B96278AABE300B976EA /* macbookair.mov */,
 			);
 			path = Resources;
@@ -128,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF89B99278AAEB900B976EA /* BatteryView.swift */,
+				BD315893278C3AF700F385D6 /* RemainingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDF89BAF278B17DE00B976EA /* macbookpro13.mp4 in Resources */,
 				BDF89BB1278B199A00B976EA /* cover.png in Resources */,
 				BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */,
 				BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */,
@@ -231,6 +230,7 @@
 				BDF89B91278AA91900B976EA /* MenuView.swift in Sources */,
 				BDF89B9C278AB22500B976EA /* ColorExtension.swift in Sources */,
 				BDF89B7D278A92E300B976EA /* Mac_Charge_MonitorApp.swift in Sources */,
+				BD315894278C3AF700F385D6 /* RemainingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

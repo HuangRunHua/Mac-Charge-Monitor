@@ -12,4 +12,5 @@ struct DeviceInfo {
     var deviceName: String
     var batteryPercentage: String
     var isCharging: Bool
+    var remaining: String
 }

@@ -35,10 +35,9 @@ struct GetDeviceInfo {
             isCharging = true
         }
         
-        
         // Get the mac battery percentage
         let percent = String.init(batteryArray[0].description.components(separatedBy: ")")[1].description.trimmingCharacters(in: NSCharacterSet.whitespaces))
-        
+        // The "percent" string contains "%", use dropLast() to eliminate this char
         let percentage = String(percent.dropLast())
         
         // Get the remaining time

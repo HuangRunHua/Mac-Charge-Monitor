@@ -30,10 +30,15 @@ struct MenuView: View {
                 .font(.system(size: 20, weight: .light, design: .rounded))
                 Spacer()
                 
-                BatteryView()
-                    .scaleEffect(0.2)
-                    .padding(.bottom, -60)
+                VStack {
+                    BatteryView()
+                        .scaleEffect(0.2)
+                        .padding(.bottom, -80)
                     .opacity(showBattery ? 1: 0)
+                    
+                    RemainingView()
+                        .opacity(showBattery ? 1: 0)
+                }
             }
         }.background(.black)
             .onAppear {
@@ -43,6 +48,7 @@ struct MenuView: View {
                     deviceStatus.deviceInfo.deviceName = deviceInfo.deviceName
                     deviceStatus.deviceInfo.batteryPercentage = deviceInfo.percentage
                     deviceStatus.deviceInfo.isCharging = deviceInfo.isCharging
+                    deviceStatus.deviceInfo.remaining = deviceInfo.remaining
                 }
                 
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

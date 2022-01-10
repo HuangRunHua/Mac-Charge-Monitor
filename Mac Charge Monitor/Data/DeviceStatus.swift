@@ -9,5 +9,5 @@ import Foundation
 
 class DeviceStatus: NSObject, ObservableObject {
     @Published var isCharged: Bool = false
-    @Published var deviceInfo: DeviceInfo = DeviceInfo(deviceName: "MacBook Air", batteryPercentage: "60", isCharging: true)
+    @Published var deviceInfo: DeviceInfo = DeviceInfo(deviceName: "MacBook Air", batteryPercentage: "60", isCharging: true, remaining: "06:08")
 }
