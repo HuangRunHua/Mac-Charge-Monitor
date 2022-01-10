@@ -12,7 +12,7 @@ struct RemainingView: View {
     @EnvironmentObject var deviceStatus: DeviceStatus
     
     var body: some View {
-        if deviceStatus.isCharged {
+        if deviceStatus.deviceInfo.isCharging {
             if deviceStatus.deviceInfo.remaining == "Calculating" {
                 Text("\(deviceStatus.deviceInfo.remaining) time for charging full")
                     .foregroundColor(.gray)
