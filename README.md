@@ -17,7 +17,7 @@ The content displayed on the pop-up window is as follows:
 - When your device is not connected to a charger, it will display the remaining usage time of the device
 
 ## Installation
-You can always download the latest version [here](). Hope you guys will enjoy it❤️.
+You can always download the latest version [here](https://github.com/HuangRunHua/Mac-Charge-Monitor/releases). Hope you guys will enjoy it❤️.
 
 ## Extension or develop more functions
 If you have better ideas or animations that can be used as other Macs, welcome to participate in the development or you can download the source code and develop it yourself.
