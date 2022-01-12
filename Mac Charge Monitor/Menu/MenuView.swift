@@ -11,6 +11,7 @@ import AVKit
 struct MenuView: View {
     
     @State var showBattery: Bool = false
+    @State var isMacSleep: Bool = false
     
     @EnvironmentObject var deviceStatus: DeviceStatus
     
@@ -54,26 +55,13 @@ struct MenuView: View {
             
         }.background(.black)
             .onAppear {
-                
-                Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
-                    let deviceInfo = GetDeviceInfo().getBatteryState()
-                    deviceStatus.deviceInfo.deviceName = deviceInfo.deviceName
-                    deviceStatus.deviceInfo.batteryPercentage = deviceInfo.percentage
-                    deviceStatus.deviceInfo.isCharging = deviceInfo.isCharging
-                    deviceStatus.deviceInfo.remaining = deviceInfo.remaining
-                }
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    withAnimation {
-                        showBattery = true
-                    }
-                }
+                deviceStatus.fileNotifications()
+                getBatteryAndTime()
             }
             .onChange(of: deviceStatus.deviceInfo.isCharging) {newValue in
                 if newValue {
                     NSApp.keyWindow?.makeKeyAndOrderFront(nil)
                     NSApp.activate(ignoringOtherApps: true)
-
                     // Use this sentence to show menu view
                     if  let menuButton = AppDelegate.instance.statusItem?.button {
                         // Top Get Button Location for PopOver
@@ -81,7 +69,30 @@ struct MenuView: View {
                     }
                 }
             }
+            .onChange(of: deviceStatus.isMacSleep) { newValue in
+                if !newValue {
+                    getBatteryAndTime()
+                }
+            }
     }
+    
+    func getBatteryAndTime() {
+        print("@@@@@@@@@@@@@@@@@@@@@@@@")
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
+            let deviceInfo = GetDeviceInfo().getBatteryState()
+            deviceStatus.deviceInfo.deviceName = deviceInfo.deviceName
+            deviceStatus.deviceInfo.batteryPercentage = deviceInfo.percentage
+            deviceStatus.deviceInfo.isCharging = deviceInfo.isCharging
+            deviceStatus.deviceInfo.remaining = deviceInfo.remaining
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            withAnimation {
+                showBattery = true
+            }
+        }
+    }
+    
 }
 
 struct MenuView_Previews: PreviewProvider {
