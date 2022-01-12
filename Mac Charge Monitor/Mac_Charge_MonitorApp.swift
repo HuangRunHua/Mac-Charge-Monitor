@@ -25,9 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     // Access AppDelegate in other files
     static private(set) var instance: AppDelegate! = nil
-    
     var statusItem: NSStatusItem?
-    
     var popOver = NSPopover()
     
     func applicationDidFinishLaunching(_ notification: Notification) {

@@ -40,6 +40,18 @@ struct MenuView: View {
                         .opacity(showBattery ? 1: 0)
                 }
             }
+            
+            Button(action: {
+                NSApplication.shared.terminate(nil)
+            }) {
+                Image(systemName: "multiply.circle")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 15, height: 15)
+                    .foregroundColor(.gray)
+            }
+            .offset(x: 130, y: -130)
+            
         }.background(.black)
             .onAppear {
                 
