@@ -52,6 +52,7 @@ struct MenuView: View {
                     .foregroundColor(.gray)
             }
             .offset(x: 130, y: -130)
+            .buttonStyle(.borderless)
             
         }.background(.black)
             .onAppear {
@@ -71,6 +72,12 @@ struct MenuView: View {
             }
             .onChange(of: deviceStatus.isMacSleep) { newValue in
                 if !newValue {
+                    getBatteryAndTime()
+                }
+            }
+            .onChange(of: AppDelegate.instance.popOver.isShown) { newValue in
+                if newValue {
+                    print("PopOver is Shown")
                     getBatteryAndTime()
                 }
             }

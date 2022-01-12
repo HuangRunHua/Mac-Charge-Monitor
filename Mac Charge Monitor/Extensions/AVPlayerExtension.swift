@@ -8,13 +8,14 @@
 import Foundation
 import AVKit
 import SwiftUI
+import Cocoa
 
 
 struct AVPlayerControllerRepresented : NSViewRepresentable {
     var player : AVPlayer
-    
 
     func makeNSView(context: Context) -> AVPlayerView {
+        
         let view = AVPlayerView()
         view.controlsStyle = .none
         view.player = player

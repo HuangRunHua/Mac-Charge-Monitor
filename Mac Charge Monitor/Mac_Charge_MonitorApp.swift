@@ -39,7 +39,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popOver.setValue(true, forKeyPath: "shouldHideAnchor")
         popOver.contentSize = NSSize(width: 300, height: 300)
         
-        
         // Setting Empty View Controller
         // And Setting View as SwiftUI View
         // with the help of Hosting Controller
