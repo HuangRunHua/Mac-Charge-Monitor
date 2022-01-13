@@ -50,13 +50,13 @@ struct MenuView: View {
                 .frame(width: 15, height: 15)
                 .foregroundColor(.gray)
             .offset(x: 130, y: -130)
-            .buttonStyle(.borderless)
             .onTapGesture {
                 getBatteryAndTime()
             }
             .onLongPressGesture {
                 NSApplication.shared.terminate(nil)
             }
+            .help("Tap to reload, long press to quit")
         }
         .background(.black)
             .onAppear {
@@ -89,7 +89,7 @@ struct MenuView: View {
     
     func getBatteryAndTime() {
         print("@@@@@@@@@@@@@@@@@@@@@@@@")
-        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
             let deviceInfo = GetDeviceInfo().getBatteryState()
             deviceStatus.deviceInfo.deviceName = deviceInfo.deviceName
             deviceStatus.deviceInfo.batteryPercentage = deviceInfo.percentage

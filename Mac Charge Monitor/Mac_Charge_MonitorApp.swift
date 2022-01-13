@@ -27,6 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     static private(set) var instance: AppDelegate! = nil
     var statusItem: NSStatusItem?
     var popOver = NSPopover()
+    var activity: NSObjectProtocol?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         AppDelegate.instance = self
@@ -55,6 +56,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             MenuButton.image = NSImage(systemSymbolName: "laptopcomputer", accessibilityDescription: nil)
             MenuButton.action = #selector(MenuButtonToggle)
         }
+        
+        // Handle app nap
+        activity = ProcessInfo().beginActivity(options: ProcessInfo.ActivityOptions.userInitiated, reason: "Good Reason")
     }
     
     
