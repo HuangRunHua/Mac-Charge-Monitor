@@ -14,6 +14,8 @@ struct MenuView: View {
     @State var isMacSleep: Bool = false
     
     @EnvironmentObject var deviceStatus: DeviceStatus
+    @State var reloadButtonOnHover: Bool = false
+    @State var quitButtonOnHover: Bool = false
     
     var app: AppDelegate?
     
@@ -42,19 +44,21 @@ struct MenuView: View {
                 }
             }
             
-            Button(action: {
-                NSApplication.shared.terminate(nil)
-            }) {
-                Image(systemName: "multiply.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 15, height: 15)
-                    .foregroundColor(.gray)
-            }
+            Image(systemName: "multiply.circle")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 15, height: 15)
+                .foregroundColor(.gray)
             .offset(x: 130, y: -130)
             .buttonStyle(.borderless)
-            
-        }.background(.black)
+            .onTapGesture {
+                getBatteryAndTime()
+            }
+            .onLongPressGesture {
+                NSApplication.shared.terminate(nil)
+            }
+        }
+        .background(.black)
             .onAppear {
                 deviceStatus.fileNotifications()
                 getBatteryAndTime()

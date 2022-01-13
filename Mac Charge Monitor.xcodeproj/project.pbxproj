@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD315894278C3AF700F385D6 /* RemainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD315893278C3AF700F385D6 /* RemainingView.swift */; };
+		BD9547A9279023D4002C927B /* MenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9547A8279023D4002C927B /* MenuExtension.swift */; };
 		BDF89B7D278A92E300B976EA /* Mac_Charge_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */; };
 		BDF89B81278A92E400B976EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B80278A92E400B976EA /* Assets.xcassets */; };
 		BDF89B84278A92E400B976EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDF89B83278A92E400B976EA /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		BD315893278C3AF700F385D6 /* RemainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingView.swift; sourceTree = "<group>"; };
+		BD9547A8279023D4002C927B /* MenuExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuExtension.swift; sourceTree = "<group>"; };
 		BDF89B79278A92E300B976EA /* Mac Charge Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mac Charge Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF89B7C278A92E300B976EA /* Mac_Charge_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mac_Charge_MonitorApp.swift; sourceTree = "<group>"; };
 		BDF89B80278A92E400B976EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF89B99278AAEB900B976EA /* BatteryView.swift */,
+				BD9547A8279023D4002C927B /* MenuExtension.swift */,
 				BD315893278C3AF700F385D6 /* RemainingView.swift */,
 			);
 			path = View;
@@ -226,6 +229,7 @@
 				BDF89B92278AA91900B976EA /* MacAnimationView.swift in Sources */,
 				BDF89BA3278AC08300B976EA /* DeviceInfo.swift in Sources */,
 				BDF89B95278AA97500B976EA /* AVPlayerExtension.swift in Sources */,
+				BD9547A9279023D4002C927B /* MenuExtension.swift in Sources */,
 				BDF89BA8278AC8A100B976EA /* GetDeviceInfo.swift in Sources */,
 				BDF89B91278AA91900B976EA /* MenuView.swift in Sources */,
 				BDF89B9C278AB22500B976EA /* ColorExtension.swift in Sources */,
@@ -371,7 +375,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.05;
+				MARKETING_VERSION = 1.06;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.Mac-Charge-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -398,7 +402,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.05;
+				MARKETING_VERSION = 1.06;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noreply-email.Mac-Charge-Monitor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
