@@ -1,4 +1,4 @@
-# Mac-Charge-Monitor
+# Mac Charge Monitor
 ![](https://github.com/HuangRunHua/Mac-Charge-Monitor/blob/main/Mac%20Charge%20Monitor/Resources/cover.png)
 
 ## Introduction
