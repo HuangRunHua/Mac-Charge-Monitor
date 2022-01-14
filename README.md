@@ -1,4 +1,4 @@
-![](https://github.com/HuangRunHua/Mac-Charge-Monitor/blob/main/Mac%20Charge%20Monitor/Assets.xcassets/AppIcon.appiconset/icon_256.png)
+![](https://github.com/HuangRunHua/Mac-Charge-Monitor/blob/main/Mac%20Charge%20Monitor/Assets.xcassets/AppIcon.appiconset/icon_128.png)
 # Mac Charge Monitor
 ![](https://github.com/HuangRunHua/Mac-Charge-Monitor/blob/main/Mac%20Charge%20Monitor/Resources/cover.png)
 
