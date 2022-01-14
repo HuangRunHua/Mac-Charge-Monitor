@@ -16,6 +16,13 @@ The content displayed on the pop-up window is as follows:
 - When your device is connected to the charger, it will display the time when the device is fully charged
 - When your device is not connected to a charger, it will display the remaining usage time of the device
 
+### Error handling and Button
+When using this software, if the program is not displayed for a long time, the charging interface cannot be popped up or the battery percentage cannot be updated after recharging(very small probability). For this situation, I designed a program loading button. 
+
+In order not to spoil the overall aesthetics of the interface, I put the functions of exiting the software and reloading the program both on the button in the upper right corner, which uses your gestures to identify what needs to be done:
+- Tap this button to reload the program
+- Long press this button to quit app
+
 ## Installation
 You can always download the latest version [here](https://github.com/HuangRunHua/Mac-Charge-Monitor/releases). Hope you guys will enjoy it❤️.
 
